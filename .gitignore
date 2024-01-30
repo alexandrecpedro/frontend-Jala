@@ -962,4 +962,4 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 ### Files
-**.pdf
+assets/**.pdf
