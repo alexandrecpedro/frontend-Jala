@@ -22,8 +22,13 @@
 - [x] 6. Web Worker
 - [x] 7. Architectures - MVVM, Flux, Redux, Component based
 - [x] 8. Object & Classes
-- [x] 9.
-- [x] 10.
+- [x] 9. Object Prototype
+- [x] 10. React Basis with Webpack
+- [x] 11. Webpack Configs
+- [x] 12. React Class Based Components and Fundamentals
+- [x] 13. React Hooks
+- [x] 14. React Hooks Persist State
+- [x] 15. Babel - Steps to Compile
 
 ## BIBLIOGRAPHICAL REFERENCES
 
@@ -47,5 +52,11 @@
 - [18] Bootstrap - https://getbootstrap.com/docs/5.1/getting-started/introduction/
 - [19] TailwindCSS - https://tailwindcss.com/
 - [20] Codectome - https://codecto.me/
+- [21] ESLint (Sort Imports) - https://eslint.org/docs/latest/rules/sort-imports
+- [22] NVM - https://github.com/nvm-sh/nvm/blob/master/README.md
+- [23] ASDF - https://asdf-vm.com/
+- [24] Rollup - https://rollupjs.org/
 - [] CodeWars (test example) - https://www.codewars.com/kata/5b210360bd03075a47001191
 - [] Jala Bootcamp 2022 - https://github.com/mateus-vianna/jalabootcamp-fe200222
+- [] JalaUniversity Bootcamp 2024 - https://github.com/mawavial/FEBoot03/
+- [] JalaIgnite - https://asset-manager.jala.us/login
