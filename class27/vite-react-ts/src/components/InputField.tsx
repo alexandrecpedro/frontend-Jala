@@ -1,5 +1,5 @@
 import React, { ChangeEvent, ReactNode } from 'react'
-
+import '../styles/inputField.css'
 
 /*
  In this module we have 3 different ways to define the InputField component.
@@ -37,23 +37,23 @@ const InputField: React.FC<InputFieldProps> = ({ value, onChange, title, placeho
     }
 
     return (
-        <div>
-            { title && <label>{ title }</label> }
-            <input type={ type } value={ value } onChange={ handleChange } placeholder={ !title ? placeholder : undefined } />
+        <div className='main'>
+            {title && <label>{title}</label>}
+            <input type={type} value={value} onChange={handleChange} placeholder={!title ? placeholder : undefined} className='input' />
             {children}
         </div>
     )
 }
 
-function InputFieldType2 ({ value, onChange, title, placeholder, type }: InputFieldProps): ReactNode {
+function InputFieldType2({ value, onChange, title, placeholder, type }: InputFieldProps): ReactNode {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         onChange(event.target.value)
     }
 
     return (
         <div>
-            { title && <label>{ title }</label> }
-            <input type={ type } value={ value } onChange={ handleChange } placeholder={ !title ? placeholder : undefined } />
+            {title && <label>{title}</label>}
+            <input type={type} value={value} onChange={handleChange} placeholder={!title ? placeholder : undefined} />
         </div>
     )
 }
@@ -66,9 +66,9 @@ const InputFieldType3 = (props: InputFieldProps): ReactNode => {
 
     return (
         <div>
-            { props.title && <label>{ props.title }</label> }
-            <input type={ props.type } value={ props.value } onChange={ handleChange } placeholder={ !props.title ? props.placeholder : undefined } />
-            { props.children }
+            {props.title && <label>{props.title}</label>}
+            <input type={props.type} value={props.value} onChange={handleChange} placeholder={!props.title ? props.placeholder : undefined} />
+            {props.children}
         </div>
     )
 }
