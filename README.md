@@ -36,9 +36,16 @@
 - [x] 20. Redux - Exercises
 - [x] 21. TypeScript - Fundamentals
 - [x] 22. TypeScript - Fundamentals II
-- [x] 23.
-- [x] 24.
-- [x] 25.
+- [x] 23. TypeScript - Methods and Generics
+- [x] 24. TypeScript - Generics
+- [x] 25. Frameworks - ExpoJS, Gatsby, Next and Vite - with TS
+- [x] 26. ESLint, Prettier, interfaces and typing
+- [x] 27. Hooks with TS - useMemo, useEffect, useState, useCallback, useDebug, useId, useRef, useLayoutEffect, useImperativeHandle, useContext
+- [x] 28. Tests - Unit Test, Smoke Test, E2E Test, Feature Test
+- [x] 29. Tests - Jest, Cypress, Vitest
+- [x] 30. CSS - A crash course
+- [x] 31.
+- [x] 31.
 
 ## BIBLIOGRAPHICAL REFERENCES
 
