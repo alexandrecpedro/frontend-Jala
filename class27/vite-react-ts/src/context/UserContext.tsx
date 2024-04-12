@@ -1,31 +1,34 @@
 
-import { createContext, FC, ReactNode, useContext } from 'react';
+import { createContext, Dispatch, FC, ReactNode, SetStateAction, useContext, useMemo, useState } from 'react';
+import { IUser } from '../interfaces/IUser';
 
 // Define the shape of the user context
-interface UserContextType {
-    // Define the properties and methods of the user context
-    // ...
+interface IUserContext {
+    user: IUser | null;
+    setUser: Dispatch<SetStateAction<IUser | null>>
 }
 
 // Creates the user context
-const UserContext = createContext<UserContextType | undefined>(undefined);
+const UserContext = createContext<IUserContext>({ user: null, setUser: () => { } });
 
 // Creates a custom hook to access the user context
-export const useUserContext = (): UserContextType => {
-    const context = useContext(UserContext);
+export const useUserContext = (): IUserContext => {
+    const context = useContext<IUserContext>(UserContext);
+
     if (!context) {
-        throw new Error('useUserContext must be used within a UserContextProvider');
+        throw new Error('useUserContext must be used within a UserContextProvider!');
     }
+
     return context;
 };
 
 // Creates the user context provider component
 export const UserContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
-    // Define the state and methods for the user context
-    // ...
+    const [user, setUser] = useState<IUser | null>(null)
+    const memorizedUser = useMemo(() => ({ user, setUser }), [user, setUser])
 
     return (
-        <UserContext.Provider value={/* Provide the value of the user context */}>
+        <UserContext.Provider value={memorizedUser}>
             {children}
         </UserContext.Provider>
     );
